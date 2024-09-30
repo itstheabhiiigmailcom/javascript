@@ -6,7 +6,7 @@ tinderUser.id = "213abc"
 tinderUser.name = "Sam"
 tinderUser.isLoggedIn = false
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
 const regularUsers = {
     email: "some@gmail.com",
@@ -20,7 +20,7 @@ const regularUsers = {
     }
 }
 
-console.log(regularUsers.fullname.title.firsttitle);
+// console.log(regularUsers.fullname.title.firsttitle);
 
 // combining objects
 const obj1 = {1:"a", 2:'b'}
@@ -59,8 +59,19 @@ const users = [
 
 
 // when i need keys
-console.log(Object.keys(tinderUser));       // it will return array
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));        // list of list i.e [[key,value], [key, value]]
+// console.log(Object.keys(tinderUser));       // it will return array
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));        // list of list i.e [[key,value], [key, value]]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+// object destructuring
+course = {
+  courseName: "js in hindi",
+  courseInstructor: "hitesh choudhary",
+  coursePrice: 9
+}
+
+const {coursePrice: price, courseName:name} =  course      // destructuring now you can use coursePrice as price
+console.log(price);
