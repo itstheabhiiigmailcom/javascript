@@ -40,5 +40,22 @@
     // accessing siblings
 
     // console.log(dayOne.nextElementSibling)
+
+    // creating element
+    const div = document.createElement('div')
+    console.log(div)
+    div.className = "main"
+    div.id = Math.round(Math.random()%10+1)
+    div.setAttribute("title", "new title")
+    div.style.backgroundColor = "green"
+    div.style.borderRadius = '30px'
+
+    // adding text to div
+    // div.innerText = "Chai aur code"
+    const addText = document.createTextNode("chai aur code")
+    div.appendChild(addText)
+
+    // appending div to body
+    document.body.appendChild(div)
 </script>
 </html>
